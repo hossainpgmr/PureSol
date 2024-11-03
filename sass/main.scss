@@ -2,11 +2,9 @@
 //   font-family: "Readex Pro", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Readex+Pro:wght@160..700&display=swap");
 //   font-family: "Nunito", sans-serif;
-
+@import "component/contact";
 // navigation styling start
-nav {
-  border-bottom: rgba(32, 24, 35, 0.193) solid 1px;
-}
+
 .navbar-nav {
   &:nth-child(3) {
     margin-right: 0;
@@ -22,8 +20,9 @@ nav {
     }
   }
 }
-.nav-right {
-  button {
+.button {
+  .custom-btn {
+    text-decoration: none;
     padding: 12px 24px;
     color: #201823;
     font-family: "Nunito", sans-serif;
@@ -34,178 +33,116 @@ nav {
     border-radius: 10px;
     text-align: center;
     text-transform: capitalize;
+    outline: none;
+    background: none; // Add background if needed
+    cursor: pointer;
   }
 }
-// navigation styling end
-//main section area style start
 
+// navigation styling end
 // hero section styling start
 .hero-section {
-  margin-top: 6%;
-  .text-area {
-    margin-right: 45px;
-    .contact-link {
-      a {
-        text-transform: capitalize;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 30px;
-        background-image: linear-gradient(
-          90deg,
-          #926efb 0%,
-          #465bd7 100%,
-          #4a56ab 100%
-        );
-        background-clip: text;
-        color: transparent;
-      }
-    }
-    .heading {
-      h3 {
-        margin: 25px 0;
-        color: #4a326f;
-        font-family: "Readex Pro", sans-serif;
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 60px;
-      }
-    }
-    .para {
-      p {
-        color: #6f7782;
-        font-family: "Nunito", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 30px;
-        margin: 0;
-      }
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+.heading {
+  h3 {
+    color: #4a326f;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 90px;
+  }
+}
+.sub-heading {
+  h4 {
+    color: #4a326f;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 90px;
+    span {
+      background-image: linear-gradient(
+        119.19deg,
+        #926efb 1.65%,
+        #465bd7 126.29%,
+        #4a56ab 126.29%
+      );
+      color: transparent;
+      background-clip: text;
     }
   }
-  .form-area {
-    margin-left: 45px;
-    border: 2px solid #9747ff;
-    border-radius: 10px;
-    padding: 36px;
-
-    .input-group {
-      margin-bottom: 20px;
-      width: 100%;
-      position: relative;
-
-      .input-item {
-        width: 100%;
-
-        input,
-        textarea {
-          width: 100%;
-          padding: 14px 45px;
-          border: 1.5px solid #e9e3fc;
-          border-radius: 10px;
-          color: #6f7782;
-          font-family: "Nunito", sans-serif;
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 30px;
-          resize: none;
-          &:focus {
-            border: 1.5px solid #c5c0d5df;
-            outline: none;
-          }
-        }
-      }
-
-      .input-icon {
-        position: absolute;
-        top: 14px;
-        left: 14px;
-      }
-    }
-
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      button {
-        color: #fff;
-        font-family: "Nunito", sans-serif;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 30px;
-        text-transform: capitalize;
-        background-image: linear-gradient(
-          90deg,
-          #926efb 0%,
-          #465bd7 100%,
-          #4a56ab 100%
-        );
-        border: none;
-        outline: none;
-        border-radius: 60px;
-        padding: 15px 50px;
-      }
-    }
+}
+.para {
+  p {
+    color: #6f7782;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 36px;
   }
-  .single-tab {
-    margin: 10% 0;
-    padding: 40px 0;
-    text-align: center;
-    background-image: linear-gradient(
-      119.19deg,
-      #926efb 1.65%,
-      #465bd7 126.29%,
-      #4a56ab 126.29%
-    );
-
-    border-radius: 50px;
-    position: relative;
-    .tab-img-1 {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    .tab-img-2 {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-    }
-    .tab-sub-heading {
-      h3 {
-        color: #fff;
-        font-family: "Readex Pro", sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 30px;
-        text-transform: lowercase;
-        letter-spacing: 5px;
-      }
-    }
-    .tab-heading {
-      h2 {
-        margin: 25px 0;
-        color: #fff;
-        font-family: "Readex Pro", sans-serif;
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 60px;
-      }
-    }
+}
+.tab-section {
+  background-image: linear-gradient(
+    90deg,
+    #926efb 0%,
+    #465bd7 100%,
+    #4a56ab 100%
+  );
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px 0;
+  width: 100%;
+  .tab-area {
     .tab-para {
       p {
-        text-align: center;
+        width: 900px;
         margin: 0 auto;
-        width: 600px;
         color: #fff;
         font-family: "Nunito", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 5px;
+      }
+      span {
+        margin: 50px 0;
+        position: relative;
+        color: #fff;
+        font-family: "Readex Pro", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 90px;
+        &::after {
+          content: "Automate";
+          position: absolute;
+          top: -12px;
+          left: 80px;
+          color: #fff;
+          font-family: "Readex Pro", sans-serif;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 40px;
+        }
+        &::before {
+          content: "Automate";
+          position: absolute;
+          top: -12px;
+          right: 80px;
+          color: #fff;
+          font-family: "Readex Pro", sans-serif;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 40px;
+        }
       }
     }
   }
 }
-// hero section styling end
+// automate section start
 
 // including sass with bootstrap
 

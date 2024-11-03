@@ -1,0 +1,134 @@
+.contact-section {
+  margin-top: 6%;
+}
+.contact-section .text-area {
+  margin-right: 45px;
+}
+.contact-section .text-area .contact-link a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  background-image: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
+  background-clip: text;
+  color: transparent;
+}
+.contact-section .text-area .heading h3 {
+  margin: 25px 0;
+  color: #4a326f;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.contact-section .text-area .para p {
+  color: #6f7782;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+.contact-section .form-area {
+  margin-left: 45px;
+  border: 2px solid #9747ff;
+  border-radius: 10px;
+  padding: 36px;
+}
+.contact-section .form-area .input-group {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+.contact-section .form-area .input-group .input-item {
+  width: 100%;
+}
+.contact-section .form-area .input-group .input-item input,
+.contact-section .form-area .input-group .input-item textarea {
+  width: 100%;
+  padding: 14px 45px;
+  border: 1.5px solid #e9e3fc;
+  border-radius: 10px;
+  color: #6f7782;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  resize: none;
+}
+.contact-section .form-area .input-group .input-item input:focus,
+.contact-section .form-area .input-group .input-item textarea:focus {
+  border: 1.5px solid rgba(197, 192, 213, 0.8745098039);
+  outline: none;
+}
+.contact-section .form-area .input-group .input-icon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.contact-section .form-area .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .form-area .button button {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: capitalize;
+  background-image: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  padding: 15px 50px;
+}
+.contact-section .single-tab {
+  margin: 10% 0;
+  padding: 40px 0;
+  text-align: center;
+  background-image: linear-gradient(119.19deg, #926efb 1.65%, #465bd7 126.29%, #4a56ab 126.29%);
+  border-radius: 50px;
+  position: relative;
+}
+.contact-section .single-tab .tab-img-1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.contact-section .single-tab .tab-img-2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.contact-section .single-tab .tab-sub-heading h3 {
+  color: #fff;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+}
+.contact-section .single-tab .tab-heading h2 {
+  margin: 25px 0;
+  color: #fff;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.contact-section .single-tab .tab-para p {
+  text-align: center;
+  margin: 0 auto;
+  width: 600px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=contact.css.map */
