@@ -46,6 +46,7 @@
   margin-top: 100px;
   text-align: center;
 }
+// reusable heading styling area
 .heading {
   h3 {
     color: #4a326f;
@@ -84,6 +85,24 @@
     margin-bottom: 36px;
   }
 }
+.similar-heading {
+  h4 {
+    color: transparent;
+    background-image: linear-gradient(
+      119.19deg,
+      #926efb 1.65%,
+      #465bd7 126.29%,
+      #4a56ab 126.29%
+    );
+    font-family: "Readex Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    background-clip: text;
+    letter-spacing: 5px;
+  }
+}
+// Hero section tab area or section styling
 .tab-section {
   background-image: linear-gradient(
     90deg,
@@ -94,7 +113,7 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 150px;
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
   width: 100%;
   .tab-area {
     .tab-para {
@@ -145,25 +164,6 @@
 // automate section start
 .automate-section {
   margin-top: 120px;
-  .automate-text-area {
-    .sub-heading {
-      h4 {
-        color: transparent;
-        background-image: linear-gradient(
-          119.19deg,
-          #926efb 1.65%,
-          #465bd7 126.29%,
-          #4a56ab 126.29%
-        );
-        font-family: "Readex Pro", sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 30px;
-        background-clip: text;
-        letter-spacing: 5px;
-      }
-    }
-  }
   .automate-detail {
     margin: 10px 0;
     display: flex;
@@ -217,6 +217,50 @@
     }
   }
 }
+// business scaling section start
+
+.business-scaling-section {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 150px;
+  .scaling-tab-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 22px;
+    row-gap: 30px;
+    .scaling-tab {
+      padding: 20px 25px;
+      border: 1px solid #e9e3fc80;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 2px 0px;
+      .tab-heading-area {
+        display: flex;
+        gap: 10px;
+        .heading-text {
+          h3 {
+            color: #333;
+            font-family: "Readex Pro", sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 36px;
+          }
+        }
+      }
+      .tab-text-area {
+        margin-top: 8px;
+        p {
+          text-align: left;
+          color: #6f7782;
+          font-size: 16px;
+          font-family: "Nunito", sans-serif;
+          font-weight: 500;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
 // including sass with bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
