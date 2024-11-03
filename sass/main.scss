@@ -260,7 +260,16 @@
     }
   }
 }
-
+// single tab section start
+.single-tab-section {
+  margin: 100px 0;
+  .contact-section {
+    margin: 0;
+  }
+  .single-tab {
+    margin: 0;
+  }
+}
 // including sass with bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
