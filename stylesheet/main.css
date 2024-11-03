@@ -240,7 +240,7 @@
   line-height: 40px;
 }
 .tab-section .tab-area .tab-para span::before {
-  content: "Automate";
+  content: "Organize";
   position: absolute;
   top: -12px;
   right: 80px;
@@ -249,6 +249,57 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
+}
+
+.automate-section {
+  margin-top: 120px;
+}
+.automate-section .automate-text-area .sub-heading h4, .automate-section .automate-text-area .sub-heading .h4 {
+  color: transparent;
+  background-image: linear-gradient(119.19deg, #926efb 1.65%, #465bd7 126.29%, #4a56ab 126.29%);
+  font-family: "Readex Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  background-clip: text;
+  letter-spacing: 5px;
+}
+.automate-section .automate-detail {
+  margin: 10px 0;
+  display: flex;
+}
+.automate-section .automate-detail .detail-area {
+  padding: 24px 32px;
+  border: 2px solid;
+  border-image-source: linear-gradient(133.89deg, #926efb 2.43%, #ffffff 51.07%);
+  border-image-slice: 1;
+}
+.automate-section .automate-detail .detail-area .detail-number p {
+  display: inline-block;
+  color: #7667ed;
+  font-size: 32px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 600;
+  line-height: 36px;
+  padding: 20px;
+  border: 2px solid;
+  border-image-source: linear-gradient(133.89deg, #926efb 2.43%, #ffffff 51.07%);
+  border-image-slice: 1;
+}
+.automate-section .automate-detail .detail-area .detail-heading h3, .automate-section .automate-detail .detail-area .detail-heading .h3 {
+  color: #7667ed;
+  font-size: 22px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 600;
+  line-height: 36px;
+}
+.automate-section .automate-detail .detail-area .detail-para p {
+  width: 400px;
+  color: #6f7782;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 /*!
