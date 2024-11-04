@@ -3,23 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Readex+Pro:wght@160..700&display=swap");
 //   font-family: "Nunito", sans-serif;
 @import "component/contact";
-// navigation styling start
-
-.navbar-nav {
-  &:nth-child(3) {
-    margin-right: 0;
-  }
-  .nav-item {
-    margin-right: 40px;
-    a {
-      color: #4a326f;
-      font-size: 18px;
-      font-family: "Readex Pro", sans-serif;
-      font-weight: 400;
-      line-height: 22.5px;
-    }
-  }
-}
+// reusable heading styling area
+// with outline button
 .button {
   .custom-btn {
     text-decoration: none;
@@ -38,24 +23,44 @@
     cursor: pointer;
   }
 }
+// without outline button
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-// navigation styling end
-// hero section styling start
-.hero-section {
-  margin: 0 auto;
-  margin-top: 100px;
-  text-align: center;
+  .sign-up-btn {
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-image: linear-gradient(
+      90deg,
+      #926efb 0%,
+      #465bd7 100%,
+      #4a56ab 100%
+    );
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    padding: 15px 50px;
+  }
 }
-// reusable heading styling area
 .heading {
   h3 {
     color: #4a326f;
     font-family: "Readex Pro", sans-serif;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 90px;
   }
 }
+
 .sub-heading {
   h4 {
     color: #4a326f;
@@ -77,12 +82,13 @@
 }
 .para {
   p {
+    margin: 25px auto;
+    max-width: 980px;
     color: #6f7782;
     font-family: "Nunito", sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    margin-bottom: 36px;
   }
 }
 .similar-heading {
@@ -100,6 +106,40 @@
     line-height: 30px;
     background-clip: text;
     letter-spacing: 5px;
+  }
+}
+// navigation styling start
+
+.navbar-nav {
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+  .nav-item {
+    margin-right: 40px;
+    a {
+      color: #4a326f;
+      font-size: 18px;
+      font-family: "Readex Pro", sans-serif;
+      font-weight: 400;
+      line-height: 22.5px;
+    }
+  }
+}
+
+// navigation styling end
+// hero section styling start
+.hero-section {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  .main-heading {
+    h3 {
+      color: #4a326f;
+      font-family: "Readex Pro", sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 90px;
+    }
   }
 }
 // Hero section tab area or section styling
@@ -268,6 +308,99 @@
   }
   .single-tab {
     margin: 0;
+  }
+}
+// subscription section start
+.subscription-section {
+  margin-top: 150px;
+
+  .subscribe-text-area {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .subscribe-card-area {
+    margin: 50px 100px;
+    display: flex;
+    gap: 40px;
+    .subscribe-card {
+      flex: 1;
+      padding: 32px 24px;
+      border: 1px solid #e9e3fc;
+      border-radius: 10px;
+      .card-text-area {
+        text-align: center;
+        .card-text-heading {
+          h3 {
+            color: #333;
+            font-family: "Readex Pro", sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 35px;
+            span {
+              color: #677782;
+              font-size: 12px;
+            }
+          }
+        }
+        .card-text-sub-heading {
+          h4 {
+            color: #333;
+            font-family: "Readex Pro", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 25px;
+          }
+        }
+        .card-text-para {
+          p {
+            color: #333;
+            font-family: "Readex Pro", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 25px;
+          }
+        }
+      }
+      .card-list-area {
+        .list-item-group > .list-item {
+          position: relative;
+          list-style: none;
+          color: #677782;
+          font-family: "Nunito", sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 30px;
+          &::before {
+            content: "✔";
+            position: absolute;
+            top: 8px;
+            left: -30px;
+            color: #5fcc8b;
+            width: 16px;
+            height: 16px;
+            border: 0.5px solid #5fcc8b;
+            border-radius: 50%;
+            font-size: 16px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .card-bottom-text {
+        margin-top: 10px;
+        text-align: center; // Centers the text within the container
+        color: #6f7782;
+        font-size: 10px;
+        font-family: "Nunito", sans-serif;
+        line-height: 13.5px;
+        font-weight: 500px;
+
+        p {
+          margin: 0; // Spacing between lines
+        }
+      }
+    }
   }
 }
 // including sass with bootstrap

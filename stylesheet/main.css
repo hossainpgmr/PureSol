@@ -70,24 +70,6 @@
   top: 14px;
   left: 14px;
 }
-.contact-section .form-area .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contact-section .form-area .button button {
-  color: #fff;
-  font-family: "Nunito", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 30px;
-  text-transform: capitalize;
-  background-image: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
-  border: none;
-  outline: none;
-  border-radius: 60px;
-  padding: 15px 50px;
-}
 .contact-section .single-tab {
   margin: 10% 0;
   padding: 40px 0;
@@ -126,26 +108,12 @@
 .contact-section .single-tab .tab-para p {
   text-align: center;
   margin: 0 auto;
-  width: 600px;
+  width: 500px;
   color: #fff;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-}
-
-.navbar-nav:nth-child(3) {
-  margin-right: 0;
-}
-.navbar-nav .nav-item {
-  margin-right: 40px;
-}
-.navbar-nav .nav-item a {
-  color: #4a326f;
-  font-size: 18px;
-  font-family: "Readex Pro", sans-serif;
-  font-weight: 400;
-  line-height: 22.5px;
 }
 
 .button .custom-btn {
@@ -165,16 +133,32 @@
   cursor: pointer;
 }
 
-.hero-section {
-  margin: 0 auto;
-  margin-top: 100px;
-  text-align: center;
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button .sign-up-btn {
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-image: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 15px 50px;
 }
 
 .heading h3, .heading .h3 {
   color: #4a326f;
   font-family: "Readex Pro", sans-serif;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 90px;
 }
@@ -193,12 +177,13 @@
 }
 
 .para p {
+  margin: 25px auto;
+  max-width: 980px;
   color: #6f7782;
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  margin-bottom: 36px;
 }
 
 .similar-heading h4, .similar-heading .h4 {
@@ -210,6 +195,33 @@
   line-height: 30px;
   background-clip: text;
   letter-spacing: 5px;
+}
+
+.navbar-nav:nth-child(3) {
+  margin-right: 0;
+}
+.navbar-nav .nav-item {
+  margin-right: 40px;
+}
+.navbar-nav .nav-item a {
+  color: #4a326f;
+  font-size: 18px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.hero-section {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+.hero-section .main-heading h3, .hero-section .main-heading .h3 {
+  color: #4a326f;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
 }
 
 .tab-section {
@@ -350,6 +362,89 @@
   margin: 0;
 }
 .single-tab-section .single-tab {
+  margin: 0;
+}
+
+.subscription-section {
+  margin-top: 150px;
+}
+.subscription-section .subscribe-text-area {
+  margin: 0 auto;
+  text-align: center;
+}
+.subscription-section .subscribe-card-area {
+  margin: 50px 100px;
+  display: flex;
+  gap: 40px;
+}
+.subscription-section .subscribe-card-area .subscribe-card {
+  flex: 1;
+  padding: 32px 24px;
+  border: 1px solid #e9e3fc;
+  border-radius: 10px;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-text-area {
+  text-align: center;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-text-area .card-text-heading h3, .subscription-section .subscribe-card-area .subscribe-card .card-text-area .card-text-heading .h3 {
+  color: #333;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-text-area .card-text-heading h3 span, .subscription-section .subscribe-card-area .subscribe-card .card-text-area .card-text-heading .h3 span {
+  color: #677782;
+  font-size: 12px;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-text-area .card-text-sub-heading h4, .subscription-section .subscribe-card-area .subscribe-card .card-text-area .card-text-sub-heading .h4 {
+  color: #333;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-text-area .card-text-para p {
+  color: #333;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-list-area .list-item-group > .list-item {
+  position: relative;
+  list-style: none;
+  color: #677782;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-list-area .list-item-group > .list-item::before {
+  content: "✔";
+  position: absolute;
+  top: 8px;
+  left: -30px;
+  color: #5fcc8b;
+  width: 16px;
+  height: 16px;
+  border: 0.5px solid #5fcc8b;
+  border-radius: 50%;
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-bottom-text {
+  margin-top: 10px;
+  text-align: center;
+  color: #6f7782;
+  font-size: 10px;
+  font-family: "Nunito", sans-serif;
+  line-height: 13.5px;
+  font-weight: 500px;
+}
+.subscription-section .subscribe-card-area .subscribe-card .card-bottom-text p {
   margin: 0;
 }
 
