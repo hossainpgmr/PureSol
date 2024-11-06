@@ -497,6 +497,43 @@
     max-height: 550px;
   }
 }
+// footer section start
+
+footer {
+  width: 100%;
+  margin-top: 120px;
+  padding: 80px 0 50px 0;
+  background: #f4f1fd;
+  .footer-section {
+    display: flex;
+    gap: 70px;
+  }
+  .footer-text-area {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    .link-group-heading {
+      h4 {
+        color: #754de9;
+        font-family: "Readex Pro", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+      }
+    }
+    .footer-link-group > .link-item {
+      list-style: none;
+      a {
+        color: #6f7782;
+        text-decoration: none;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+  }
+}
 // including sass with bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
