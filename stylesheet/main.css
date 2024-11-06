@@ -448,6 +448,83 @@
   margin: 0;
 }
 
+.accordion-section {
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.accordion-section .accordion-group-area {
+  display: flex;
+}
+.accordion-section .accordion-group-area ul {
+  width: 550px;
+  margin: 0 auto;
+}
+.accordion-section .accordion-group-area li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.accordion-section .accordion-group-area li label {
+  background-color: #fafafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+  font-family: "Readex Pro" sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.accordion-section .accordion-group-area li label span::before {
+  content: "";
+  position: absolute;
+  right: 22px;
+  top: 28px;
+  width: 8px;
+  height: 1px;
+  background-image: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
+  transform: rotate(-45deg);
+}
+.accordion-section .accordion-group-area li label span::after {
+  content: "";
+  position: absolute;
+  left: 482px;
+  top: 28px;
+  width: 8px;
+  height: 1px;
+  background-image: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
+  transform: rotate(45deg);
+}
+.accordion-section .accordion-group-area .content {
+  margin-top: 5px;
+  padding: 0 25px;
+  line-height: 24px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  background-image: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
+}
+.accordion-section .accordion-group-area .content p {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px;
+}
+.accordion-section .accordion-group-area label + input[type=radio] {
+  display: none;
+}
+.accordion-section .accordion-group-area label + input[type=radio]:checked + .content {
+  max-height: 550px;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

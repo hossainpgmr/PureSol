@@ -403,6 +403,100 @@
     }
   }
 }
+// accordion section
+.accordion-section {
+  margin: 0 auto;
+  margin-top: 120px;
+  .accordion-group-area {
+    display: flex;
+    ul {
+      width: 550px;
+      margin: 0 auto;
+    }
+    li {
+      position: relative;
+      list-style: none;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+
+      label {
+        background-color: #fafafc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        color: #333;
+        font-family: "Readex Pro" sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        span::before {
+          content: "";
+          position: absolute;
+          right: 22px;
+          top: 28px;
+          width: 8px;
+          height: 1px;
+          background-image: linear-gradient(
+            90deg,
+            #926efb 0%,
+            #465bd7 100%,
+            #4a56ab 100%
+          );
+          transform: rotate(-45deg);
+        }
+        span::after {
+          content: "";
+          position: absolute;
+          left: 482px;
+          top: 28px;
+          width: 8px;
+          height: 1px;
+          background-image: linear-gradient(
+            90deg,
+            #926efb 0%,
+            #465bd7 100%,
+            #4a56ab 100%
+          );
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .content {
+      margin-top: 5px;
+      padding: 0 25px;
+      line-height: 24px;
+      border-radius: 5px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s;
+      background-image: linear-gradient(
+        90deg,
+        #926efb 0%,
+        #465bd7 100%,
+        #4a56ab 100%
+      );
+      p {
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 16px;
+      }
+    }
+  }
+  .accordion-group-area label + input[type="radio"] {
+    display: none;
+  }
+  .accordion-group-area label + input[type="radio"]:checked + .content {
+    max-height: 550px;
+  }
+}
 // including sass with bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
