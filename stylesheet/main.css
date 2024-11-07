@@ -116,6 +116,70 @@
   line-height: 24px;
 }
 
+.condition-title {
+  width: 100%;
+  padding: 64px 0;
+  background-image: linear-gradient(90deg, #926efb 0%, #465bd7 100%, #4a56ab 100%);
+}
+.condition-title h3, .condition-title .h3 {
+  text-align: center;
+  color: #fff;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.condition-area {
+  margin: 0 auto;
+  width: 920px;
+  padding: 50px 0;
+}
+.condition-area .condition-para p {
+  color: #6f7782;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.condition-group {
+  margin-top: 42px;
+}
+
+.group-title h4, .group-title .h4 {
+  color: #4a326f;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37.5px;
+  margin-bottom: 16px;
+}
+
+.group-para {
+  color: #6f7782;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.condition-list-group .list-group .list-item,
+.condition-list-group .list-group .list-title {
+  color: #6f7782;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.condition-list-group .list-group .list-item span,
+.condition-list-group .list-group .list-title span {
+  font-weight: 700;
+}
+.condition-list-group .list-group .list-item {
+  margin-left: 30px;
+}
+
 .button .custom-btn {
   text-decoration: none;
   padding: 12px 24px;
